@@ -185,14 +185,14 @@ width: 29%;
   opacity:50%;
 }
 	.home{
-	
+	padding-top:60px;
 	}
 .btn-red-int{
 	
 	text-align: center;
 	text-decoration: none;
 	color:black;
-    background:#ff99cc;
+    background:#cccccc;
     font-weight: bold;
     font-size: 15px;
     padding:5px 50px 5px 50px;
