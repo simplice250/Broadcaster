@@ -1,0 +1,130 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar{
+  display: flex;
+  position: sticky;
+  top: 0;
+  flex: 1;
+  align-items: center;
+  width: 100%;
+  background: white;
+  box-shadow: 2px 1px 6px gray;
+  opacity: .98;
+}
+.logo{
+  margin: 0 20px; 
+}
+.links{
+  margin: 0 40px 0 auto;
+}
+.links ul li{
+  display: inline-block;
+  padding: 10px 20px;
+}
+.links li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #51e3d4;;
+}
+.links li a:hover{
+  color: #6367e2;
+  border-radius: 5px;
+}
+.menu{
+  display: none;
+}
+.side-menu{
+  display: none;
+  position: sticky;
+  top:0;
+  width: 100%;
+  height: 100%;
+  background: rgb(251, 251, 247);
+  opacity: .96;
+  transition: margin-top .6s; 
+
+}
+.menu ul{
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+.menu ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+.menu ul li{
+  padding: 30px;
+  margin: 0 20px;
+  border-bottom: 1px solid black;
+}
+.menu ul #close{
+  margin: 0 20px 0 80%;
+  padding: 7px;
+  font-size: 30px;
+  border: none;
+}
+
+
+.container div{
+  margin: 40px 30px;
+}
+.header{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),url('C:/Users/Simplice/Desktop/Broadcaster/UI/images/community.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+}
+.header .title{
+  color: #51e3d4;
+  font-size: 35px;
+  letter-spacing: 4px;
+  font-weight: lighter;
+  text-align: center;
+  transform: translateY(430%);
+}
+.header .slogan{
+  color: white;
+  font-size: 20px;
+  letter-spacing: 4px;
+  font-weight: lighter;
+  font-style: oblique;
+  text-align: center;
+  transform: translateY(600%);
+}
+.header a button{
+  padding: 10px;
+  background: transparent;
+  border: 1px solid white;
+  color: #51e3d4;
+  font-size: 14px;
+  transform: translateY(650%);
+  margin-left: 45%;
+}
+.header a button:hover{
+  cursor: pointer;
+}
+
+
+
+footer{
+  background: white;
+  padding: 20px;
+  height: 100%;
+  box-shadow: 1px 1px 7px gray;
+  text-align: center;
+  font-size: 17px;
+}
+
+
+
+
+
+
+
