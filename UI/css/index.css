@@ -75,7 +75,7 @@ body{
   margin: 40px 30px;
 }
 .header{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),url('C:/Users/Simplice/Desktop/Broadcaster/UI/images/community.jpeg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),url('../images/community.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;

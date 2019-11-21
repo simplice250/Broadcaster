@@ -1,9 +1,9 @@
 const express = require('express');
-
+const path=require('path');
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(express.static(__dirname,'../ui'));
+app.use(express.static(path.join(__dirname,'../UI')));
 app.use('/', require('./Routes/api/incident'));
 app.use('/', require('./Routes/api/signIn'));
 app.use('/', require('./Routes/api/signUp'));
