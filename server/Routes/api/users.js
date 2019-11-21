@@ -1,35 +1,34 @@
-const express=require('express');
-const router=express.Router();
-const fs=require('fs');
+const express = require('express');
 
-let users=[];
-let redflags=[];
-let Id=0;
-let reg=0;
+const router = express.Router();
 
 
-router.post('/auth/signup/',(req,res)=>{
-    reg++;
-    const newUser={
-     id:reg,
-     firstname : req.body.firstname,
-     lastname : req.body.lastname,
+let users = [];
+let redflags = [];
+let Id = 0;
+let reg = 0;
+router.post('/auth/signup/', (req, res) => {
+  reg++;
+  const newUser = {
+  id: reg,
+    firstname: req.body.firstname,
+     lastname: req.body.lastname,
      email: req.body.email, 
-     phoneNumber:req.body.phoneNumber,
+     phoneNumber: req.body.phoneNumber,
      username: req.body.username,
-     password:req.body.password,
-     status:'Active'   
+     password: req.body.password,
+     status: 'Active'   
     }
     if(!newUser.email){
        return res.status(400).json({
-           "status" :400,
-           "error" : "please enter your e-mail"
+           "status": 400,
+           "error": "please enter your e-mail"
            }
            );
        }else if(!newUser.lastname){
         return res.status(400).json({
-            "status" :400,
-            "error" : "please enter your last name"
+            "status": 400,
+            "error": "please enter your last name"
             })
        }else if( !newUser.firstname){
         return res.status(400).json({
@@ -40,8 +39,8 @@ router.post('/auth/signup/',(req,res)=>{
         users.forEach(user=>{
             if(user.email.toString()===req.body.email.toString()){
               
-                return res.status(401).json({
-                    "status" :401,
+                return res.status(409).json({
+                    "status" :409,
                     "error" : "E-mail already exist"
                     }
                     );
@@ -52,11 +51,13 @@ router.post('/auth/signup/',(req,res)=>{
     
 
     users.push(newUser);
-    res.status(201).json({
+    return  res.status(201).json({
         "status" : 201,
         "message": "User created successfully",
         "data" :JSON.stringify(users)});
 })
+
+
 router.get('/auth/signup/',(req,res)=>res.json(users));
 
 router.get('/auth/signup/:id',(req,res)=>{
@@ -223,7 +224,7 @@ router.patch('/redflag/:id/comment',(req,res)=>{
                 if(!upRedflag.comment){
                 redflag.comment="";}else{
                  redflag.comment=upRedflag.comment;   
-                }
+        }
                 
                 redflag.id=redflag.id;
                 redflag.createdOn=redflag.createdOn;
@@ -244,7 +245,7 @@ router.patch('/redflag/:id/comment',(req,res)=>{
         })
         
     }else{
-        res.status(400).json({msg:'user not found' });
+        res.status(404).json({msg:'user not found' });
         
     }
 })
@@ -279,9 +280,6 @@ router.patch('/redflag/:id/location',(req,res)=>{
         })
         
     }else{
-        res.status(400).json({msg:'user not found' });
-        
-    }
-})
-    
-module.exports=router;
+        res.status(404).json({msg:'user not found' });
+        }
+  });
