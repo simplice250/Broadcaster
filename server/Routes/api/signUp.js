@@ -58,7 +58,7 @@ router.post('/auth/signup/', (req, res) => {
           "data" :JSON.stringify(users)});
   })
 
-  router.get('/auth/signup/',(req,res)=>res.json(users));
+  router.get('/auth/signup/',(req,res)=>res.status(200).json(users));
 
 router.get('/auth/signup/:id',(req,res)=>{
     const found=users.some(user=>user.id===parseInt(req.params.id));
@@ -84,7 +84,7 @@ router.put('/auth/signup/:id',(req,res)=>{
                 user.password=upUser.password? upUser.password :user.password;
                 users=users.filter(user=>user.id!==parseInt(req.params.id));
                 users.push(user);
-                res.json({msg:'user apdated',user});
+                res.status(200).json({msg:'user apdated',user});
             }
         })
         

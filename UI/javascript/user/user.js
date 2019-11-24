@@ -19,15 +19,46 @@ window.onclick = function a(event) {
     }
   }
 };
-// eslint-disable-next-line no-unused-vars
-function myFunction1() {
-  document.getElementById('myDropdown').classList.toggle('show');
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
 }
-function myFunction2() {
-  document.getElementById('myDropdown1').classList.toggle('show1');
+
+
+window.onclick = function(event) {
+  if (!event.target.matches('#dropdown')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
 }
-// eslint-disable-next-line no-unused-vars
+ 
+ function myFunction1(){
+   document.getElementById("myDropdown").classList.toggle("show");
+}
+function myFunction2(e){
+  e.preventDefault();
+   document.getElementById("myDropdown1").classList.toggle("show1");
+}
 function myFunction(x) {
-  x.classList.toggle('change');
-  myFunction2();
+ x.classList.toggle("change");
+  
 }
+
+const menu=document.querySelector('.menu');
+menu.addEventListener("click",(e)=>{
+  e.preventDefault();
+   myFunction(menu);
+   myFunction2(e);
+})
+
+document.querySelector('.btn-create').addEventListener("click",(e)=>{
+  e.preventDefault();
+  console.log(e);
+  myFunction1();
+});

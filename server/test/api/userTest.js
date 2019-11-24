@@ -7,7 +7,7 @@ chai.use(chaiHttp);
 chai.should();
 
 
-    describe('post', () => {
+    describe('user test', () => {
         
       it('should not be able to signup when email is not sent', (done) => {
         chai.request(app).post('/auth/signup').send(users[0])
