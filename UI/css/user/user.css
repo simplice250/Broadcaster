@@ -258,8 +258,23 @@ width: 29%;
 	.home{
 	padding-top:60px;
 	}
-.btn-red-int{
+.btn-red{
 	
+	text-align: center;
+	text-decoration: none;
+	color:black;
+    background:#f3ecd3;
+    font-weight: bold;
+    font-size: 15px;
+    padding:5px 62px 5px 62px;
+    border-radius: 5px;
+    border:solid 1px;
+    margin-left: 24%;
+    
+   
+}
+.btn-int{
+
 	text-align: center;
 	text-decoration: none;
 	color:black;
@@ -269,8 +284,7 @@ width: 29%;
     padding:5px 50px 5px 50px;
     border-radius: 5px;
     border:solid 1px;
-    
-   
+    margin-left: 24%;
 }
 
 
@@ -334,10 +348,7 @@ body{
    background: white;
    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.profile-table{
-	margin-left: 160px;
-	margin-top: 50px;	
-}
+
 .profile-table table{
 width:70%;
 
@@ -355,8 +366,9 @@ th{
 .green{
 	background-color: #51e3d4;
 }
-.list-insidents{
-	margin-left: 160px;
+.tables{
+	padding-top: 120px;
+	padding-left: 20%;
 }
 .list-insidents table{
 	width: 70%;

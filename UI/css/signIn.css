@@ -67,6 +67,7 @@ form{
     border: none;
     width: 40%;
     text-align: left;
+    padding-bottom:0;
 
 
 }
@@ -98,19 +99,24 @@ height: 40px;
     box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
     transform: translate3d(0, 1px, 0);
   }
-
-
-.fgt a{
-	font-weight: bold;
-    text-decoration: none;
-	margin-left: 40px;
-	color: #51e3d4;;
+.new{
+  margin-left: 20px;
+  height: 40px;
+  width: 100%;
 }
+.newhere{
+  float: left;
+  padding-right: 300px;
+}
+.pass{
+  float: right;
+}
+
 .new a{
   font-weight: bold;
  text-decoration: none;
  float: right;
-	margin-left: 40px;
+
 	color:#51e3d4;
 
 }
@@ -125,6 +131,7 @@ footer{
   box-shadow: 1px 1px 7px gray;
   text-align: center;
   font-size: 17px;
- margin-top:150px;
+  margin-top: 200px;
+  clear:both;
 }
 
