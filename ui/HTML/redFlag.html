@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create an Intervation | BroadCaster</title>
+  <link rel="shortcut icon" type="image/ico" href="../images\favicon.ico">
+  <link rel="stylesheet" type="text/css" href="../css/user.css">
+</head>
+<body>
+    <div class="toolBar">
+        <div class="buttons">
+           <button class="btns" onclick="location.href='home-user.html'">Home</button>
+           
+        <button  class="btn-create"  id="dropdown">Create an incident</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="redFlag.html">Red flag</a>
+          <a href="intervation-user.html">Intervation</a>
+          
+           </div>
+             <button class="btns" onclick="location.href='profile.html'">Profile</button>
+        </div>
+       
+              <div class="profile">
+             <div class="signout">
+            <a href="signIn.html"> Sign out</a>
+        </div>
+         <img src="../images/FormatFactoryIMG_0226.png" class="profile-pic">
+        </div>
+      </div>
+<div class="creation">
+  <h1>Create red flag</h1>
+        <input type="text" placeholder="Title" class="input"><br><br>
+          <input type="text" placeholder="add a tag name" class="input"><br><br>
+         <label>Add a photo or video:</label><br><br>
+          <input type="file" class="file"> <br><br>
+        <label>add your comment here:<br><br></label><textarea></textarea><br><br>
+        <label>Add location :</label><br><br>
+        <div class="map">
+          </div><br><br>
+      <button class="create">Create</button>
+</div>
+<div class="foot">
+<h5>&copy Andela fellowship</h5> 
+</div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOJaoXePY6k_LoLEG7yApRSKKUSYNkOVY&callback=initMap"
+    async defer></script>
+    <script type="text/javascript" src="../javascript/red.js"></script>
+</body>
+</html>
