@@ -1,14 +1,38 @@
 .toolBar{
-
-	float: left;
-    padding-top:5px;
+	display: inline-block;
+    padding-top:10px;
 	background-color: white;
 	height: 40px;
 	border-bottom: 3px solid black;
-     width:95%;
+     width:100%;
      box-shadow: 2px 1px 10px gray;
 	  opacity: .98;
-	  
+	
+}
+.signout{
+	float: left;
+	width: 40%;
+	height: 5%;
+
+}
+.signout a{
+	text-decoration: none;
+	font-size: 24px;
+	color: #51e3d4;
+}
+ 
+.profile{
+	float: right;
+	height:auto;
+	width: 15%;
+	height: 95%;
+	margin-right: 40px;
+}
+.profile-pic{
+	float: right;
+	width: 30%;
+	height: 100%;
+	border-radius: 80%;
 }
 .search{
 	margin-top: 4px;
@@ -39,18 +63,6 @@ input:focus {
 }
 button:focus{
 outline: none;
-}
-.menu {
-	
-	float:right;
-  display: inline-block;
-  cursor: pointer;
-  width:5%;
-  height: 45px;
-  border-bottom: 3px solid black;
-  background-color:white;
-  box-shadow: 20px 1px 10px gray;
- opacity: .98;
 }
 
 .bar1, .bar2, .bar3 {
@@ -83,8 +95,8 @@ outline: none;
 .btns{
 	font-size: 18px;
 	float: left;
-	border-spacing:
-	background:none;
+	border-spacing:1px;
+	background: none;
 	border: none;
 	background:#51e3d4;
 	color:black;
@@ -103,7 +115,7 @@ color: black;
 .btn-create{
 	font-size: 18px;
 	float: left;
-	border-spacing:
+	border-spacing:1px;
 	background:none;
 	border: none;
 	background:#51e3d4;
@@ -176,39 +188,49 @@ padding-left: 3px;
 
 }
 .map{
-	height: 150px;
-	width: 95%;
+	margin-left: 30px;
+	height: 250px;
+	width: 90%;
 	background: grey;
 }
 .create{
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-size: 18px;
 	font-weight: bold;
-	float:left;
-	margin-top: 20px;
-	margin-left: 30px;
+	float: right;
 	height: 30px;
 	width: 15%;
-	border-radius: 10px;
-	background:#51e3d4 ;
+	border-radius: 5px;
+	background:#51e3d4  ;
 	color: black;
+	border: 0.5px solid;
+	margin-right: 40px;
 	
 }
 .create:hover{
 background: #f3f9fb;
 color: black;
+}
 
-}
-.incident-btn{
-	margin-left: 35px;
-	margin-top: 120px;
-	background-color:none;
-	width: 100%;
-}
-.incident-btn label{
-	color: black;;
+.cancel{
+	font-size: 18px;
 	font-weight: bold;
-	font-size: 24px;
+	height: 30px;
+	width: 15%;
+	border-radius: 5px;
+	background:brown;
+	color: black;
+	border: 0.5px solid;
+	margin-left: 40px;
+	
+}
+.cancel:hover{
+background: #f3f9fb;
+color: black;
+}
+
+.incident-btn{
+    background-color:none;
+	width: 100%;
 }
 .pic{
 
@@ -253,12 +275,12 @@ width: 29%;
 
 
 .dropdown-content{
-  margin-left: 12.5%;
-  margin-top: 40px;
+  margin-left: 13.2%;
+  margin-top: 41px;
   display: none;
   position: absolute;
   background-color: #f1f1f1;
-  min-width: 168px;
+  min-width: 176px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 
@@ -276,8 +298,8 @@ width: 29%;
 .show{display:block;}
 
 .dropdown-content1 {
-  margin-left: 93%;
-  margin-top: 25px;
+  margin-top: 30px;
+  margin-left: 600px;
   display: none;
   position: absolute;
   background-color: #f1f1f1;
@@ -311,4 +333,104 @@ body{
 	margin: 0;
    background: white;
    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.profile-table{
+	margin-left: 160px;
+	margin-top: 50px;	
+}
+.profile-table table{
+width:70%;
+
+}
+ tr{
+text-align: center;
+}
+th{
+	background-color: #f3ecd3;
+}
+.red{
+     color: whitesmoke;
+	background-color: brown;
+}
+.green{
+	background-color: #51e3d4;
+}
+.list-insidents{
+	margin-left: 160px;
+}
+.list-insidents table{
+	width: 70%;
+}
+.list-insidents td{
+	background-color: rgb(218, 214, 214);
+} 
+.interv{
+	padding:20px;
+	background-color: rgb(255, 255, 255);
+	width: 50%;
+	margin: 30px auto;
+	box-shadow: 1px 2px 5px lightgrey;
+	border-radius:10px;
+	height:auto;
+}
+.interv h3{
+	color: brown;
+}
+.interv span{
+	color:black;
+     font-size: 12px ;
+}
+.location{
+	height: 15px;
+     width: 15px;
+}
+.image{
+	width: 200px;
+	height:100px;
+  }
+
+  .men{
+	float: right;
+    width: 10px;
+    height: 30px;
+    background-image: radial-gradient(circle at center, black 2px, transparent 2px);
+	background-size: 10px 10px;
+	
+}
+.creation{
+	padding:30px 50px 30px 30px;
+	background-color: rgb(255, 255, 255);
+	width: 50%;
+	margin:30px auto;
+	box-shadow: 1px 2px 5px lightgrey;
+	border-radius:10px;
+	height:700px;
+	
+}
+.input{
+	
+	height: 20px;
+   width: 70%;
+ margin-left: 30px;
+ border: none;
+border-bottom: solid 0.5px black;
+padding-left:15px;
+font-size: 18px;
+}
+.creation textarea{
+	margin-left: 30px;
+	height:40px;
+	width: 72%;
+}
+.creation label{
+	font-size: 18px;
+	font-weight: bolder;
+	margin-left: 40px;
+}
+.file{
+margin-left: 30px;
+border-bottom: solid 0.5px black;
+}
+.creation h1{
+	color: rgb(245, 108, 108);
 }

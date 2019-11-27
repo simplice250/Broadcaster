@@ -50,20 +50,27 @@ function myFunction(x) {
   
 }
 
-/*const menu=document.querySelector('.menu');
-menu.addEventListener("click",(e)=>{
-  e.preventDefault();
-   myFunction(menu);
-   myFunction2(e);
-})*/
-const menu=document.querySelector('.men');
-menu.addEventListener("click",(e)=>{
-  e.preventDefault();
-   myFunction2(e);
-})
 
 document.querySelector('.btn-create').addEventListener("click",(e)=>{
   e.preventDefault();
   console.log(e);
   myFunction1();
 });
+
+const update=document.querySelector('#update');
+
+update.addEventListener("click",(e)=>{
+   e.preventDefault();
+    window.location.href = '../../HTML/user/home.html';
+
+    
+})
+const cancel=document.querySelector('.cancel');
+cancel.addEventListener("click",(e)=>{
+   e.preventDefault();
+    window.location.href = '../../HTML/user/home.html';
+
+    
+})
+
+

@@ -50,17 +50,6 @@ function myFunction(x) {
   
 }
 
-/*const menu=document.querySelector('.menu');
-menu.addEventListener("click",(e)=>{
-  e.preventDefault();
-   myFunction(menu);
-   myFunction2(e);
-})*/
-const menu=document.querySelector('.men');
-menu.addEventListener("click",(e)=>{
-  e.preventDefault();
-   myFunction2(e);
-})
 
 document.querySelector('.btn-create').addEventListener("click",(e)=>{
   e.preventDefault();

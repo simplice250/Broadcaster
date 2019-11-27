@@ -50,20 +50,27 @@ function myFunction(x) {
   
 }
 
-/*const menu=document.querySelector('.menu');
-menu.addEventListener("click",(e)=>{
-  e.preventDefault();
-   myFunction(menu);
-   myFunction2(e);
-})*/
-const menu=document.querySelector('.men');
-menu.addEventListener("click",(e)=>{
-  e.preventDefault();
-   myFunction2(e);
-})
+
 
 document.querySelector('.btn-create').addEventListener("click",(e)=>{
   e.preventDefault();
   console.log(e);
   myFunction1();
 });
+
+
+const update_interv=document.querySelector('#update_interv');
+
+update_interv.addEventListener("click",(e)=>{
+   e.preventDefault();
+    window.location.href = '../../HTML/user/intervation-home.html';
+
+    
+})
+const cancel_interv=document.querySelector('#cancel_interv');
+cancel_interv.addEventListener("click",(e)=>{
+   e.preventDefault();
+    window.location.href = '../../HTML/user/intervation-home.html';
+
+    
+})

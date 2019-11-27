@@ -6,62 +6,44 @@
   <link rel="stylesheet" type="text/css" href="../../css\user\user.css">
 </head>
 <body>
-<div class="toolBar">
-  <div class="buttons">
-     <button class="btns" onclick="location.href='home.html'">Home</button>
-     
-     <button  class="btns" id="dropdown">Create an incident</button>
-     <div id="myDropdown" class="dropdown-content">
-         <a href="redFlag.html">Red flag</a>
-        <a href="intervation.html">Intervation</a>
-     </div>
-     <button class="btns" onclick="location.href='profile.html'">Profile</button>
-  </div>
-  
-  
-  <div class="search">
-      <input type="text" placeholder="Enter a username to search">
-      <button class="btn-search">Search</button>
-    </div>
-  
-</div>
-<div class="menu">
-  <div class="bar1"></div>
-  <div class="bar2"></div>
-  <div class="bar3"></div>
-</div>
-<div id="myDropdown1" class="dropdown-content1">
-    <a href="../signIn.html">Sign out</a>
-     </div><br><br><br><br>
-
-<div class="container">
-        <span class="container-head">Create an intervation</span>
-        <div class="incident"> 
-          <form class="form-incident">
+    <div class="toolBar">
+        <div class="buttons">
+           <button class="btns" onclick="location.href='home.html'">Home</button>
+           
+        <button  class="btn-create"  id="dropdown">Create an incident</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="redFlag.html">Red flag</a>
+          <a href="intervation.html">Intervation</a>
           
-          <label>Title:<br></label><input type="text"><br>
-          <label>Tag name:<br></label><input type="text"><br>
-          <label>Add location :</label><br>
-             <div class="map">
-             </div>
-               <label>add your comment here:<br></label><textarea></textarea>
+           </div>
+             <button class="btns" onclick="location.href='profile.html'">Profile</button>
+        </div>
+       
+              <div class="profile">
+             <div class="signout">
+            <a href="../signIn.html"> Sign out</a>
+        </div>
+         <img src="../../images/FormatFactoryIMG_0226.png" class="profile-pic">
+        </div>
+      </div>
 
-          </form>
+      <div class="creation">
+          <h1>Crete Intervation</h1>
+                <input type="text" placeholder="Title" class="input"><br><br>
+                  <input type="text" placeholder="add a tag name" class="input"><br><br>
+                 <label>Add a photo or video:</label><br><br>
+                  <input type="file" class="file"> <br><br>
+                <label>add your comment here:<br><br></label><textarea></textarea><br><br>
+                <label>Add location :</label><br><br>
+                <div class="map">
+                  </div><br><br>
+              <button class="create">Create</button>
         </div>
-        
-        <div class="incident-btn">
-          <label>Add video:</label>
-          <input type="file" class="vid"> 
-          <label>Add photo:</label>
-          <input type="file" class="pic">
-        </div>
-      <button class="create">Create</button>
-</div>
 <div class="foot">
 <h5>&copy Andela fellowship</h5> 
 </div>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOJaoXePY6k_LoLEG7yApRSKKUSYNkOVY&callback=initMap"
     async defer></script>
-    <script type="text/javascript" src="../../javascript\user\user.js"></script>
+    <script type="text/javascript" src="../../javascript/user/intervation.js"></script>
 </body>
 </html>
